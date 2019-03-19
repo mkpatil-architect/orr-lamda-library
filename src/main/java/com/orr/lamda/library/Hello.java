@@ -48,7 +48,7 @@ public class Hello
 
 
     try {
-            String utilityServiceUrl = "http://206.189.128.67:12011/api/sendEmail";
+            String utilityServiceUrl = "http://201.182.128.61:123123/api/sendEmail";
 
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.set("Content-Type", "application/json");
