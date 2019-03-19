@@ -1,25 +1,65 @@
-/target/
-!.mvn/wrapper/maven-wrapper.jar
+######################
+# Project Specific
+######################
+/src/main/webapp/assets/styles/main.css
+/src/main/webapp/dist
 
-### STS ###
-.apt_generated
+######################
+# Node
+######################
+/node/**
+**/node_modules/**
+
+######################
+# Bower
+######################
+**/bower_components/**
+
+######################
+# SASS
+######################
+.sass-cache/**
+
+
+# Eclipse files
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
+.settings/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Generated files
+**/target*/
+src-generated/
+build/
+
+# Mac files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IntelliJ files
 *.iml
-*.ipr
+.idea/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-/build/
+# Sonar generated files
+.sonar
+
+#log
+log/*.log
+logs/*.log
+**/log/*.log
+**/logs/*.log
+*.log
+
+*.log.*
+
+#Elastic search data directory
+**/data/*
+
+**/pom.xml.bak
+*.ipr
+*.iws
+/.apt_generated/
