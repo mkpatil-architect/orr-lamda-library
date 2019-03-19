@@ -1,0 +1,25 @@
+<body>
+<h1>Celect Java Client Library</h1>
+
+<h2>Usage:</h2>
+
+<p>The Java client library is created using a builder as follows:</p>
+
+<code>
+    String endpoint = "https://examples.celectengine.com:30409";<br>
+    BasicPDBCredentials credentials = new BasicPDBCredentials("userId", "password");<br>
+    CelectPDBClient celectPDBClient = new
+    CelectPDBClientBuilder().celectPDBEndPoint(endpoint).withCredentials(credentials).build();<br>
+</code>
+
+<p>The builder will create the client and authenticate it to the specified pDB instance. The client can then be used to
+    interact with the instance.</p>
+
+<p>For example:</p>
+
+<code>
+    List&lt;Project&gt; projects = celectPDBClient.getProjectsForUser("someUser");<br>
+    System.out.println("The user has " + projects.size() + " projects.");<br>
+</code>
+
+</body>
